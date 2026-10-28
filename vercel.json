@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/gerar-pix",           "destination": "/api/gerar-pix" },
+    { "source": "/api/consultar-pix",       "destination": "/api/consultar-pix" },
+    { "source": "/api/generate_qr_gateway", "destination": "/api/generate_qr_gateway" },
+    { "source": "/api/payment-status",      "destination": "/api/payment-status" },
+    { "source": "/api/register-payment",    "destination": "/api/register-payment" },
+    { "source": "/api/noop",               "destination": "/api/noop" },
+
+    { "source": "/checkout/",              "destination": "/checkout/index.html" },
+    { "source": "/checkout",               "destination": "/checkout/index.html" },
+
+    { "source": "/up1/",                   "destination": "/up1/index.html" },
+    { "source": "/up1",                    "destination": "/up1/index.html" },
+    { "source": "/up1/1/",                 "destination": "/up1/1/index.html" },
+    { "source": "/up1/1",                  "destination": "/up1/1/index.html" },
+
+    { "source": "/up2/",                   "destination": "/up2/index.html" },
+    { "source": "/up2",                    "destination": "/up2/index.html" },
+    { "source": "/up2/2/",                 "destination": "/up2/2/2.html" },
+    { "source": "/up2/2",                  "destination": "/up2/2/2.html" },
+
+    { "source": "/up3/",                   "destination": "/up3/index.html" },
+    { "source": "/up3",                    "destination": "/up3/index.html" },
+    { "source": "/up3/3/",                 "destination": "/up3/3/index.html" },
+    { "source": "/up3/3",                  "destination": "/up3/3/index.html" },
+
+    { "source": "/up4/",                   "destination": "/up4/index.html" },
+    { "source": "/up4",                    "destination": "/up4/index.html" },
+    { "source": "/up4/4/",                 "destination": "/up4/4/index.html" },
+    { "source": "/up4/4",                  "destination": "/up4/4/index.html" },
+
+    { "source": "/up5/",                   "destination": "/up5/index.html" },
+    { "source": "/up5",                    "destination": "/up5/index.html" },
+    { "source": "/up5/5/",                 "destination": "/up5/5/index.html" },
+    { "source": "/up5/5",                  "destination": "/up5/5/index.html" },
+
+    { "source": "/up6/",                   "destination": "/up6/index.html" },
+    { "source": "/up6",                    "destination": "/up6/index.html" },
+    { "source": "/up6/6/",                 "destination": "/up6/6/index.html" },
+    { "source": "/up6/6",                  "destination": "/up6/6/index.html" },
+
+    { "source": "/up7/",                   "destination": "/up7/index.html" },
+    { "source": "/up7",                    "destination": "/up7/index.html" },
+    { "source": "/up7/7/",                 "destination": "/up7/7/index.html" },
+    { "source": "/up7/7",                  "destination": "/up7/7/index.html" },
+
+    { "source": "/up8/",                   "destination": "/up8/index.html" },
+    { "source": "/up8",                    "destination": "/up8/index.html" },
+    { "source": "/up8/8/",                 "destination": "/up8/8/index.html" },
+    { "source": "/up8/8",                  "destination": "/up8/8/index.html" },
+
+    { "source": "/up9/",                   "destination": "/up9/index.html" },
+    { "source": "/up9",                    "destination": "/up9/index.html" },
+    { "source": "/up9/9/",                 "destination": "/up9/9/index.html" },
+    { "source": "/up9/9",                  "destination": "/up9/9/index.html" },
+
+    { "source": "/up10/",                  "destination": "/up10/index.html" },
+    { "source": "/up10",                   "destination": "/up10/index.html" },
+    { "source": "/up10/10/",               "destination": "/up10/10/index.html" },
+    { "source": "/up10/10",                "destination": "/up10/10/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tiktok-checkout-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serverless API Sunize v2 para checkout e upsells TikTok",
+  "engines": {
+    "node": ">=18"
+  }
+}
